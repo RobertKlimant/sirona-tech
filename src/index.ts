@@ -3,8 +3,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 
 // import { greetUser } from '$utils/greet';
-import { set_size, title_header_animation } from '$utils/header_animation';
-import { title_other_animation } from '$utils/other_animation';
+import { set_size } from '$utils/home_page';
+import { title_other_animation } from '$utils/other_pages';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
@@ -17,7 +17,6 @@ window.Webflow.push(() => {
   });
 
   title_other_animation();
-  title_header_animation();
   set_size();
 
   // Avoid flash of unstyled content
